@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
+/* #region utility*/
 
-/* #region container*/
 .container-main {
     max-width: 700px;
     width: 80%;
@@ -18,7 +18,16 @@
     margin: 0 auto;
 }
 
-/* #endregion container*/
+img {
+    max-width: 100%;
+}
+
+main>div {
+    display: flex;
+    align-items: center;
+}
+
+/* #endregion utility*/
 
 
 
@@ -39,7 +48,7 @@
 }
 
 .debug .banner-main {
-    height: 450px;
+    height: 80%;
     background-color: chartreuse;
 }
 
@@ -48,35 +57,68 @@
     background-color: #b5b3b1;
 }
 
+.debug .section-center {
+    height: 800px;
+    background-color: #b5b3b1;
+}
+
+.debug .section-end {
+    height: 800px;
+    background-color: #b5b3b1;
+}
+
+.debug .pippo {
+    height: 80%;
+}
+
 .debug .immage {
-    width: 30%;
+    width: 70%;
     background-color: chocolate;
     height: 100%;
 }
 
 .debug .description {
-    width: 70%;
+    width: 30%;
     background-color: crimson;
     height: 100%;
+}
+
+.section-conclusive {
+    background-color: #a53e2e;
+    height: 1385px;
+}
+
+.debug .pippo2 {
+    background-color: black;
+    height: 500px;
 }
 
 
 /* #endregion Debug */
 
-.intestation {
+header {
+    display: flex;
+
+}
+
+.heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.banner-main {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* vertical-align: middle; non funziona*/
 }
 
 .pippo {
     display: flex;
-    height: 100%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+
+}
+
+.section-center .pippo .immage {
+    order: 1;
+}
+
+.banner {
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
