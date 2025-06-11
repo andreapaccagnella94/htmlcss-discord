@@ -7,13 +7,13 @@
 /* #region utility*/
 
 .container-main {
-    max-width: 700px;
+    max-width: 1000px;
     width: 80%;
     margin: 0 auto;
 }
 
 .container-small {
-    max-width: 700px;
+    max-width: 800px;
     width: 60%;
     margin: 0 auto;
 }
@@ -37,6 +37,10 @@ img {
     justify-content: space-between;
 }
 
+.bc-grey {
+    background-color: grey;
+}
+
 /* #endregion utility*/
 
 
@@ -53,7 +57,7 @@ img {
 }
 
 .debug .container-small {
-    height: 300px;
+    height: 400px;
     background-color: chartreuse;
 }
 
@@ -64,22 +68,22 @@ img {
     padding-bottom: 10%;
 }
 
-main section {
+.debug main section {
     height: 800px;
     background-color: #b5b3b1;
     padding-top: 20%;
     padding-bottom: 20%;
 }
 
-.section-conclusive {
+.debug .section-conclusive {
     background-color: #a53e2e;
     height: 1385px;
 }
 
 .debug .immage {
     width: 70%;
-    background-color: chocolate;
     height: 100%;
+    background-color: chocolate;
 }
 
 .debug .description {
@@ -102,11 +106,15 @@ header {
     background-color: #3161e0;
 }
 
+
+/* #region banner*/
 .banner {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    font-weight: bold;
+    height: 540px;
 }
 
 .banner>div {
@@ -116,7 +124,13 @@ header {
     padding-top: 10rem;
     padding-bottom: 0.5rem;
     gap: 1rem;
-    height: 540px;
+}
+
+.banner p {
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 1.5;
+    hyphens: auto;
 }
 
 .btn-banner-dowload {
@@ -135,3 +149,48 @@ header {
     border-radius: 10px;
     margin: 0.5rem;
 }
+
+/* #endregion banner*/
+
+
+/*#region section */
+
+section {
+    height: 540px;
+}
+
+section .flex {
+    gap: 1rem
+}
+
+section .container-main {
+    padding-top: 3.125rem;
+}
+
+.immage {
+    width: 70%;
+    height: 100%;
+}
+
+.description {
+    width: 30%;
+    height: 100%;
+}
+
+h2,
+.description p {
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 1.3;
+    hyphens: auto;
+}
+
+section .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/*#endregion section */
