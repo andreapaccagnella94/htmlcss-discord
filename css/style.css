@@ -6,6 +6,7 @@
 
 /* #region utility*/
 
+
 .container-main {
     max-width: 700px;
     width: 80%;
@@ -22,10 +23,16 @@ img {
     max-width: 100%;
 }
 
-main>div {
+.flex {
     display: flex;
     align-items: center;
 }
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 /* #endregion utility*/
 
@@ -51,6 +58,10 @@ main>div {
     height: 80%;
     background-color: chartreuse;
 }
+
+/* .debug .container-main {
+    height: 200px;
+} */
 
 .debug .section-start {
     height: 800px;
@@ -113,9 +124,12 @@ header {
 
 }
 
-.section-center .pippo .immage {
+/* .section-center .pippo .immage {
     order: 1;
-}
+} 
+Funziona ma non è la cosa migliore guarda nella sezione utility .row-reverse  
+*/
+
 
 .banner {
     background-image: url(../img/jumbo.png);
