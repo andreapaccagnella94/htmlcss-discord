@@ -200,9 +200,6 @@ section .description {
 /*#endregion section */
 
 /* #region section-conclusive */
-
-/* #endregion section-conclusive */
-
 .section-conclusive {
     height: 100%;
 }
@@ -226,4 +223,45 @@ section .description {
     border-radius: 10px;
 }
 
+/* #endregion section-conclusive */
+
 /* #endregion main */
+
+/* #region footer */
+footer {
+    background-color: #23272a;
+    height: 600px;
+    padding: 3.125rem 0;
+}
+
+footer .container-main {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+footer .container-main div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .social {
+    flex-grow: 0.2;
+}
+
+.social h3 {
+    color: #7289da;
+}
+
+.info-column h5 {
+    color: #7289da;
+}
+
+footer a,
+.language {
+    text-decoration: none;
+    color: white;
+}
+
+/* #endregion footer */
