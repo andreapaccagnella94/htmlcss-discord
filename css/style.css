@@ -1,8 +1,21 @@
+/* #region Common */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+section {
+    padding: 3.125rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion Common */
+
 
 /* #region utility*/
 
@@ -18,10 +31,6 @@
     margin: 0 auto;
 }
 
-img {
-    max-width: 100%;
-}
-
 .flex {
     display: flex;
     align-items: center;
@@ -31,10 +40,6 @@ img {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-}
-
-.space-between {
-    justify-content: space-between;
 }
 
 .bc-grey {
@@ -50,10 +55,9 @@ img {
     border: 1px dashed black;
 }
 
-
 .debug main .container-main {
     height: 400px;
-    background-color: black;
+    background-color: rgb(199, 142, 18);
 }
 
 .debug .container-small {
@@ -62,17 +66,15 @@ img {
 }
 
 .debug .banner {
-    height: 540px;
     background-color: #8b24ab;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding: 10% 0;
 }
 
 .debug main section {
     height: 800px;
     background-color: #b5b3b1;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding: 10% 0;
+
 }
 
 .debug .section-conclusive {
@@ -88,8 +90,8 @@ img {
 
 .debug .description {
     width: 30%;
-    background-color: crimson;
     height: 100%;
+    background-color: crimson;
 }
 
 
@@ -100,29 +102,37 @@ img {
     order: 1;
     } 
     Funziona ma non è la cosa migliore guarda nella sezione utility .row-reverse  
-    */
+*/
+
+/* #region header */
 header {
     height: 81px;
     background-color: #3161e0;
 }
 
+header>div {
+    height: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+}
 
+/* #endregion header */
+
+/* #region main */
 /* #region banner*/
 .banner {
+    height: 540px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     font-weight: bold;
-    height: 540px;
 }
 
 .banner>div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
-    padding-bottom: 0.5rem;
     gap: 1rem;
 }
 
@@ -133,7 +143,7 @@ header {
     hyphens: auto;
 }
 
-.btn-banner-dowload {
+.banner .btn-dowload {
     background-color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -141,7 +151,7 @@ header {
     margin: 0.5rem;
 }
 
-.btn-banner-open-discord {
+.btn-open-discord {
     background-color: black;
     color: white;
     border: none;
@@ -152,7 +162,6 @@ header {
 
 /* #endregion banner*/
 
-
 /*#region section */
 
 section {
@@ -161,10 +170,6 @@ section {
 
 section .flex {
     gap: 1rem
-}
-
-section .container-main {
-    padding-top: 3.125rem;
 }
 
 .immage {
@@ -192,5 +197,33 @@ section .description {
     gap: 1rem;
 }
 
-
 /*#endregion section */
+
+/* #region section-conclusive */
+
+/* #endregion section-conclusive */
+
+.section-conclusive {
+    height: 100%;
+}
+
+.section-conclusive .flex {
+    flex-direction: column;
+}
+
+.section-conclusive span {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.section-conclusive .btn-dowload {
+    background-color: #8ea1e1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+/* #endregion main */
